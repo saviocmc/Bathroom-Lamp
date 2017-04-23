@@ -5,6 +5,7 @@
 #include <Arduino.h>
 #include <Relay.h>
 
+// Instantiate a new Relay object attached to pin 9.
 Relay lamp(9);
 
 // The pin in which the door's "button" is attached to.
@@ -32,5 +33,7 @@ void setup() {
 void loop() {
 	if (isTheDoorOpen()) lamp.setState(OFF);
 	else lamp.setState(ON);
+	// This delay here is just to prevent the relay to be toggled too many times
+	// in the period when the button (the door) is opening or closing.
 	delay(100);
 }
