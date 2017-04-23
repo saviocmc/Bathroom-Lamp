@@ -10,7 +10,7 @@
 
 #define relayPin 9
 #define doorButtonPin 10
-#define timeout 600000 // 10 minutes
+#define timeout 300000 // 5 minutes
 
 void setup() {
 	pinModeFast(relayPin, OUTPUT);

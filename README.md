@@ -27,7 +27,7 @@ The other foil was connected to the GND pin and placed in the doorway, next to t
 
 ## The Algorithm
 
-As the section above describes the circuit, you can see that the original switch can be used to turn the whole circuit on and off. This makes possible to the light bulb be turned on and off with the original switch. To allow that, once the microcontroller is on, it turns on the light bulb and let it stay on for 10 minutes if the door is open. If someone close the door before the timeout is over, then the light will be turned off once the door is opened. So, to turn on the light with the door open (for any reason), just switch the original light bulb switch off and then on.
+As the section above describes the circuit, you can see that the original switch can be used to turn the whole circuit on and off. This makes possible to the light bulb be turned on and off with the original switch. To allow that, once the microcontroller is on, it turns on the light bulb and let it stay on for 5 minutes if the door is open. If someone close the door before the timeout is over, then the light will be turned off once the door is opened. So, to turn on the light with the door open (for any reason), just switch the original light bulb switch off and then on.
 
 
 ## Compiling
