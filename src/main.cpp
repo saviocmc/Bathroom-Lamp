@@ -15,7 +15,7 @@
 void setup() {
 	pinModeFast(relayPin, OUTPUT);
 	digitalWriteFast(relayPin, LOW);
-	pinModeFast(doorButtonPin, INPUT_PULLUP);
+	pinMode(doorButtonPin, INPUT_PULLUP);
 	while (digitalReadFast(doorButtonPin) && millis() < timeout);
 }
 
