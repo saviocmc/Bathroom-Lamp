@@ -8,14 +8,14 @@
 #include <Arduino.h>
 #include <digitalWriteFast.h>
 
-uint8_t const relayPin = 9;
-uint8_t const doorButtonPin = 10;
-uint64_t const timeout = 600000; // 10 minutes
+#define relayPin 9
+#define doorButtonPin 10
+#define timeout 600000 // 10 minutes
 
 void setup() {
 	pinModeFast(relayPin, OUTPUT);
-	pinModeFast(doorButtonPin, INPUT_PULLUP);
 	digitalWriteFast(relayPin, LOW);
+	pinModeFast(doorButtonPin, INPUT_PULLUP);
 	while (digitalReadFast(doorButtonPin) && millis() < timeout);
 }
 
