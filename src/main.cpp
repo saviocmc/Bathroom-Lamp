@@ -16,4 +16,5 @@ void setup() {
 void loop() {
 	if (isDoorButtonPressed()) lamp.setState(ON);
 	else lamp.setState(OFF);
+	delay(100);
 }
