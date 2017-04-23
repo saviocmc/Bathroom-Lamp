@@ -15,7 +15,7 @@ There is a sensor in the door to tell when the door is open or close. The microc
 * A cellphone charger (5V output)
 
 
-## Circuit
+## The Circuit
 
 The wires with AC voltage that were originally wired to the light bulb were removed and connected in the cellphone charger input. The output were soldered into the input (Vin) of the Arduino and the Relay module.
 One of the AC wires was connected back in the light bulb. The other was connected as well, but through the Relay, so the Relay can act like as the switch. The relay "In1" pin was connected to one of the digital I/O pins of the Arduino.
@@ -25,7 +25,7 @@ The other foil was connected to the GND pin and placed in the doorway, next to t
 *TODO: Put a graphic scheme of the circuit here*
 
 
-## The algorithm
+## The Algorithm
 
 As the section above describes the circuit, you can see that the original switch can be used to turn the whole circuit on and off. This makes possible to the light bulb be turned on and off with the original switch. To allow that, once the microcontroller is on, it turns on the light bulb and let it stay on for 10 minutes if the door is open. If someone close the door before the timeout is over, then the light will be turned off once the door is opened. So, to turn on the light with the door open (for any reason), just switch the original light bulb switch off and then on.
 
