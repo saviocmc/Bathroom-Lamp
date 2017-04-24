@@ -8,18 +8,22 @@
 #include <Arduino.h>
 #include <digitalWriteFast.h>
 
-#define relayPin 9
-#define doorButtonPin 10
+#define relayPin 0
+#define doorButtonPin1 10
+#define doorButtonPin2 11
 #define timeout 300000 // 5 minutes
 
 void setup() {
 	pinModeFast(relayPin, OUTPUT);
 	digitalWriteFast(relayPin, LOW);
-	pinMode(doorButtonPin, INPUT_PULLUP);
-	while (digitalReadFast(doorButtonPin) && millis() < timeout);
+	pinModeFast(doorButtonPin2, OUTPUT);
+	digitalWriteFast(doorButtonPin2, LOW);
+	pinMode(doorButtonPin1, INPUT_PULLUP);
+	digitalWriteFast(doorButtonPin1, HIGH);
+	while (digitalReadFast(doorButtonPin1) && millis() < timeout);
 }
 
 void loop() {
-	digitalWriteFast(relayPin, digitalReadFast(doorButtonPin));
+	digitalWriteFast(relayPin, digitalReadFast(doorButtonPin1));
 	delay(100);
 }
