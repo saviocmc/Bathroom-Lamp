@@ -16,7 +16,7 @@ uint8_t const doorButtonPin1 = 10;
 uint8_t const doorButtonPin2 = 11;
 
 // This is the time (in milliseconds) that the lamp will stay ON if (and only if) when the microcontroller
-// is turned on, the door is open. If the door is closed before these timeout is over
+// is turned on AND the door is open. If the door is closed before these timeout is over
 // then it won't matter anymore and the lamp will be turned off as soon as the door is open again.
 uint64_t const timeout = 300000; // 5 minutes
 
@@ -30,7 +30,7 @@ void setup() {
 	lamp.setState(ON);
 	// Set the mode of the door's "sensor" pins
 	// One of them is the GND reference, the other is used with the built in Pullup resistor
-	// Together they form a pullup button.
+	// Together they form a Pullup button.
 	pinMode(doorButtonPin2, OUTPUT);
 	digitalWrite(doorButtonPin2, LOW);
 	pinMode(doorButtonPin1, INPUT_PULLUP);
