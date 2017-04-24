@@ -1,12 +1,15 @@
 /**
 * @author Sávio Carlos Martins Costa
+*
+* The goal of this project is to eliminate the energy waste when people
+* leaves the bathroom leaving the light bulb ON.
 **/
 
 #include <Arduino.h>
 #include <Relay.h>
 
-// Instantiate a new Relay object attached to pin 9.
-Relay lamp(9);
+// Instantiate a new Relay object attached to pin 0.
+Relay lamp(0);
 
 // The pin in which the door's "button" is attached to.
 uint8_t const doorButtonPin = 10;
