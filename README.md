@@ -19,8 +19,7 @@ There is a sensor in the door to tell when the door is open or close. The microc
 
 The wires with AC voltage that were originally wired to the light bulb were removed and connected in the cellphone charger input. The output were soldered into the input (Vin) of the Arduino and the Relay module.
 One of the AC wires was connected back in the light bulb. The other was connected as well, but through the Relay, so the Relay can act like as the switch. The relay "In1" pin was connected to one of the digital I/O pins of the Arduino.
-The sensor in the door are just two little foils of aluminium. One of the foils was placed in the door, close to the door's hinge and then connected to one of the digital I/O pins of the Arduino through a wire.
-The other foil was connected to the GND pin and placed in the doorway, next to the other part of the door's hinge in a way that when the door is closed, the two foils come together. Therefore I can use this "sensor" in the Arduino program like an ordinary pushbutton.
+The sensor in the door are just two little foils of aluminium. One of the foils was placed in the door, close to the door's hinge. The other was placed in the doorway, next to the other part of the door's hinge in a way that when the door is closed, the two foils come together. Both foils were connected to digital I/O pins of the Arduino through wires. Therefore I can use this "sensor" in the Arduino program like an ordinary pushbutton.
 
 *TODO: Put a graphic scheme of the circuit here*
 
