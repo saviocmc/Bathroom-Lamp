@@ -46,8 +46,10 @@ If you are gonna use other board/microcontroller, you just need to change the [p
 The sensor of aluminum foil was the most cheap and easy way that I found to get this thing working. The ideal sensor is one that can tell when there's people in the bathroom and when there's not. If you can think in something better, please suggest it here (you can [open an issue](https://github.com/saviocmc/Bathroom-Lamp/issues) or something). I thought in [Lasers](https://wikipedia.org/wiki/Laser_pointer) and [PIR sensors](https://wikipedia.org/wiki/Passive_infrared_sensor), but I couldn't find a really efficient way to use them.
 
 
-## Images of the circuit (ready to be used) that I built
+## Pictures of the whole thing on a board
 
-![First Picture of the circuit](extras/img1.jpg)
+Down here, images of the hardware layout I did. You can (as always) build something more suitable for your need and/or more pleasant to the eyes. This is just my suggestion (But it works great!) :)
 
-![Second Picture of the circuit](extras/img2.jpg)
+![First Picture of the circuit](extras/circuit_picture_1.jpg)
+
+![Second Picture of the circuit](extras/circuit_picture_2.jpg)
