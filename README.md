@@ -44,3 +44,10 @@ If you got interested in this project and want to replicate it, or better yet, t
 If you are gonna use other board/microcontroller, you just need to change the [platformio.ini](https://github.com/saviocmc/Bathroom-Lamp/blob/master/platformio.ini) file, putting there your board model and framework. Take a look at [PlatformIO](http://platformio.org), it's great.
 
 The sensor of aluminum foil was the most cheap and easy way that I found to get this thing working. The ideal sensor is one that can tell when there's people in the bathroom and when there's not. If you can think in something better, please suggest it here (you can [open an issue](https://github.com/saviocmc/Bathroom-Lamp/issues) or something). I thought in [Lasers](https://wikipedia.org/wiki/Laser_pointer) and [PIR sensors](https://wikipedia.org/wiki/Passive_infrared_sensor), but I couldn't find a really efficient way to use them.
+
+
+## Images of the circuit (ready to be used) that I built
+
+![First Picture of the circuit](extras/img1.jpg)
+
+![Second Picture of the circuit](extras/img2.jpg)
