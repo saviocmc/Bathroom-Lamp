@@ -9,7 +9,7 @@
 #include <Relay.h>
 
 // Instantiate a new Relay object attached to pin 0.
-Relay lamp(0);
+Relay lamp = Relay(0);
 
 // The pins in which the door's "sensor" is attached to.
 uint8_t const doorButtonPin1 = 10;
