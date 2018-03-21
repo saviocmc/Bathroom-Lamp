@@ -48,7 +48,7 @@ The sensor of aluminum foil was the most cheap and easy way that I found to get 
 
 ## Pictures of the whole thing on a board
 
-Down here, images of the hardware layout I did. You can (as always) build something more suitable for your need and/or more pleasant to the eyes. This is just my suggestion (But it works great!) :)
+Down here, images of the hardware layout I did. You can (as always) build something more suitable for your need and/or more pleasant to the eyes. This is just my suggestion (but it works just fine!) :)
 
 ![First Picture of the circuit](extras/circuit_picture_1.jpg)
 
